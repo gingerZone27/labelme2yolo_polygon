@@ -103,7 +103,7 @@ def generate_yolo_dataset(input_dir, output_dir, val_ratio):
     os.system("clear")
     print("----------  Dataset Info  ----------")
     print("    Path: {}".format(output_dir))
-    print("    Image Size: {} (Input)  --->  {} (output) # image size is a multiplication of 32.".format(input_image_size, output_image_size))
+    print("    Image Size: {} (Input)  --->  {} (output) # image size is a multiplication of 32 required by yolov8.".format(input_image_size, output_image_size))
     print("    Number of training images:   {}".format(len(all_jsons)-len(dataset_valid)))
     print("    Number of validation images: {}".format(len(dataset_valid)))
     print("    Available classes: \n{}".format(str_list_names))
